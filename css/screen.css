@@ -4,16 +4,23 @@
 // font-family: 'Source Code Pro', ;
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300);
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
 body {
     font-size: 16px;
     font-weight: 300;
     color: #555555;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Open Sans', sans-serif;
+}
+
+#page {
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
 }
 
 
@@ -58,11 +65,126 @@ a:visited {
     color: #65B1FF;
 }
 
+a.btn {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 4px 15px;
+    transition: background 0.5s;
+}
+
+a.btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
 
 /* Header */
 
 header {
-	height: 430px;
-	background: #CF0004 url(../img/banner_1200.jpg) no-repeat center bottom;
-	position: relative;
+    height: 430px;
+    background: #CF0004 url(./../img/banner_1200.jpg) no-repeat center bottom;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 66px;
+    background: url(./../img/logo.svg) no-repeat 0 0;
+    background-size: contain;
+    top: 15px;
+    left: 20px;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 130px;
+    left: 55%;
+}
+
+header div.hero h1 {
+    line-height: 1em;
+    margin: 0px 0px 30px 0px;
+    color: #FFFFFF;
+}
+
+
+/* Section - All */
+
+section {
+    padding: 0 30px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Section- Main */
+
+section.main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0px;
+    //background: #CCCCCC;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.main aside div.content {
+    margin: 15px;
+    background: no-repeat center top;
+    background-size: 75px 75px;
+    padding-top: 85px;
+}
+
+section.main aside h3 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section.main aside h3 a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section.main aside div.content.trending {
+    background-image: url(./../img/icon_star.svg);
+}
+
+section.main aside div.content.find-it {
+    background-image: url(./../img/icon_marker.svg);
+}
+
+section.main aside div.content.tools {
+    background-image: url(./../img/icon_gear.svg);
+}
+
+
+/* Section - Atmosphere */
+
+section.atmosphere {
+    background: #CC6633;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+section.atmosphere article {
+	padding: 0px 20px 0px 515px;
+	background: url(./../img/photo_lounge.jpg) no-repeat 0 5px;
+	min-height: 220px;
 }
