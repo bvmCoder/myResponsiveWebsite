@@ -292,6 +292,12 @@ nav {
     width: 100%;
 }
 
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 nav ul {
     list-style: none;
     margin: 0px;
@@ -300,6 +306,10 @@ nav ul {
 
 nav ul li:hover {
     background: #2B0306;
+}
+
+nav ul li:hover > ul {
+    display: block;
 }
 
 nav ul li a {
@@ -319,6 +329,23 @@ nav ul li a:hover {
     background: #6D0911;
 }
 
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background: #2B0306;
+    display: none;
+}
+
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0px;
+}
+
+
 /* Top Level Element */
 
 nav > ul {
@@ -329,8 +356,9 @@ nav > ul > li {
     float: left;
 }
 
-nav > ul > li > ul {
-    display: none;
+nav > ul > li > a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
 }
 
 /* Footer */
