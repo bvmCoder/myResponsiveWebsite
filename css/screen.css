@@ -184,7 +184,123 @@ section.atmosphere {
 }
 
 section.atmosphere article {
-	padding: 0px 20px 0px 515px;
-	background: url(./../img/photo_lounge.jpg) no-repeat 0 5px;
-	min-height: 220px;
+    padding: 0px 20px 0px 515px;
+    background: url(./../img/photo_lounge.jpg) no-repeat 0 5px;
+    min-height: 220px;
+}
+
+
+/* Section - How To */
+
+section.how-to {
+    background: #EEE9D9;
+    position: relative;
+}
+
+section.how-to aside {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+}
+
+section.how-to aside div.content {
+    padding: 30px 30px 20px 0px;
+}
+
+section.how-to aside div.content img {
+    display: block;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+section.how-to aside div.content h4 {
+    margin-bottom: 0px;
+}
+
+section.how-to aside div.content p {
+    margin-bottom: 0.5em;
+}
+
+section.how-to aside div.content a {
+    display: inline-block;
+    color: #CC6633;
+    font-weight: 700;
+}
+
+section.how-to blockquote {
+    margin: 0px;
+    width: 32%;
+    color: #444444;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+}
+
+section.how-to blockquote p {
+    margin: 30px 30px 20px 50px;
+}
+
+section.how-to blockquote p.quote {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+section.how-to blockquote::before {
+    content: '\201C';
+    color: #D2BD65;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 5em;
+    font-family: serif;
+}
+
+section.how-to blockquote p.quote::after {
+    content: '\201D';
+    font-family: serif;
+}
+
+section.how-to blockquote p.credit {
+    //font-style: italic;
+    color: #777777;
+    font-size: 0.9em;
+    margin-top: 0;
+    padding-left: 20px;
+    line-height: 1.3em;
+    position: relative;
+}
+
+section.how-to blockquote p.credit::before {
+    content: '\2014';
+    color: #D2BD65;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+}
+
+
+/* Footer */
+
+footer {
+    font-size: 0.8em;
+    margin: 40px;
+    color: #999999;
+}
+
+footer div.content {
+    display: inline;
+}
+
+footer a {
+    margin-left: 30px;
+    color: #777777;
+}
+
+footer a:visited {
+    color: #777777;
+}
+
+footer a:hover {
+    color: #000000;
 }
