@@ -422,7 +422,14 @@ footer a:hover {
         left: 56%;
     }
 
-    header div.hero {
-        left: 56%;
+    header div.hero h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Section - atmosphere */
+
+    section.atmosphere article {
+        padding-left: 400px;
+        background-size: 375px auto;
     }
 }
