@@ -409,3 +409,20 @@ footer a:visited {
 footer a:hover {
     color: #000000;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.4em;
+    }
+
+    /* Header */
+    header div.hero {
+        left: 56%;
+    }
+
+    header div.hero {
+        left: 56%;
+    }
+}
